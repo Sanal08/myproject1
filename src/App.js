@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import Meals from "./components/Meals/Meals";
 import { useState } from "react";
 import CartContextProvider from "./store/CartContextProvider";
+import Footer from "./components/Footer/Footer";
+
 
 export default function App() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
@@ -22,6 +24,7 @@ export default function App() {
       <main>
         <Meals />
       </main>
+      <Footer />
     </CartContextProvider>
   );
 }
